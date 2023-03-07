@@ -29,11 +29,12 @@ function CanAccessGroup(data)
     return false
 end 
 
-function GiveKeys(vehicle)
+function GiveKeys(plate)
 end
 
 function SetVehicleProperties(vehicle, props)
     QBCore.Functions.SetVehicleProperties(vehicle, props)
+    GiveKeys(GetVehicleNumberPlateText(vehicle))
 end
 
 function GetVehicleProperties(vehicle)
