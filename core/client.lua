@@ -19,7 +19,6 @@ function CreateVeh(modelHash, ...)
     end
     local veh = CreateVehicle(modelHash, ...)
     SetModelAsNoLongerNeeded(modelHash)
-    GiveKeys(veh)
     return veh
 end
 
