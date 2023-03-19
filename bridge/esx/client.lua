@@ -23,13 +23,10 @@ function CanAccessGroup(data)
     return false
 end 
 
-function GiveKeys(plate)
-	
-end
-
 function SetVehicleProperties(vehicle, props)
     ESX.Game.SetVehicleProperties(vehicle, props)
-    GiveKeys(GetVehicleNumberPlateText(vehicle))
+    if not NetworkGetEntityIsNetworked(vehicle) then return end
+    Config.GiveKeys(props.plate)
 end
 
 function GetVehicleProperties(vehicle)
