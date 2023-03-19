@@ -6,6 +6,10 @@ Config.Debug = true
 
 Config.RenderDistance = 20.0
 
+Config.GiveKeys = function(plate)
+    -- Replace this line with your export / event to give keys for your vehicle.
+end
+
 Config.Rental = {
     time = 60, -- Max minutes a player can have the car out until they get no refund for returning it.
     plateFormat = "RNT ...", -- The plate format for rented cars. ( _ = Letter, . = Number )
