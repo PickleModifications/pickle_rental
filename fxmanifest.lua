@@ -3,7 +3,7 @@ lua54 'yes'
 game 'gta5'
 
 name         'pickle_rental'
-version      '1.0.0'
+version      '1.1.0'
 description  'A fully immersive rental system for vehicles.'
 author       'Pickle Mods'
 
